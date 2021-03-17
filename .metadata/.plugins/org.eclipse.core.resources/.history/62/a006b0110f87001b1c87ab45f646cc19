@@ -1,0 +1,4 @@
+
+public enum ProjectType {
+	FINANCE , MAINTAINANCE , RESEARCH ;
+}
