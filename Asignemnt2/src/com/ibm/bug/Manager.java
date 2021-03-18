@@ -2,17 +2,19 @@ package com.ibm.bug;
 
 public class Manager extends Employee {
 	
-	 Acknowledge ack;
+	 boolean ack;
 	 //STATUS stat;
 
 	public Manager(String empName, String empId, String email, int number) {
 		super(empName, empId, email, number);
 		
 	}
-	public void acknowledgeReport(Acknowledge ack) {
+	public void acknowledgeReport(boolean ack) {
 		//System.out.println(Acknowledge.APPROVED);
-		if(ack== Acknowledge.APPROVED) {
-		System.out.println("Receievd and acknowledged ");}
+		if(ack==true) {
+		System.out.println("Receievd and acknowledged ");
+		mailstakeholders();
+		}
 		else
 			System.out.println("Have to work more");
 	}

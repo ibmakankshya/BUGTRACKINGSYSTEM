@@ -16,6 +16,7 @@ public class Developer extends Employee {
 	}
 
 	public void setBugStatus(BugDevStatus bugdev) {
+		this.bugdev=bugdev;
 		System.out.println("The bug status is set to :" + bugdev);
 	}
 	

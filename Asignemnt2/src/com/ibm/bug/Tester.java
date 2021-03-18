@@ -22,7 +22,7 @@ public class Tester extends Employee {
 		this.submtOn = submtOn;
 	}
 	public void log() {
-		System.out.println("Log report of new Bug is created");
+		System.out.println("Log report of new Bug is created with logVersion"+ logVersion);
 	}
 	public String gettName1() {
 		return empName;
