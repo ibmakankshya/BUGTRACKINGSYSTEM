@@ -7,7 +7,7 @@ public class Bug {
 	private BugType type;
 	private String location;
 	private Priority priority;
-	
+	private String I;
 	
 	
 	public Bug(String id, String name, STATUS status, BugType type, String location, Priority priority) {
