@@ -1,0 +1,55 @@
+package com.ibm.bug.demo;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+import com.ibm.bug.Bug;
+import com.ibm.bug.demo.repo.bugRepository;
+
+
+public class bugController {
+	@Autowired
+	bugRepository bugrepository;
+	@PostMapping("/bug")
+	@ResponseStatus(code = HttpStatus.CREATED)
+	
+	String createBug(@RequestBody Bug bug, BindingResult bindingResult) {
+		validateModel(bindingResult);
+		return "Bug is Created";
+	}
+
+	
+
+	@GetMapping("/bug")
+	String getBug() {
+		return "Found the bug";
+	}
+
+	@PutMapping("/bug/{id}")
+	String updateBug(@PathVariable("id") int bugID) {
+		System.out.println(bugID);
+		return " Bug status updated";
+	}
+
+	@DeleteMapping("/bug/{id}")
+	String deletedOrder(@PathVariable("id") int bugID) {
+		System.out.println(bugID);
+		return " Bug deleted";
+	}
+private void validateModel(BindingResult bindingResult) {
+		
+		if (bindingResult.hasErrors()) {
+			throw new IllegalArgumentException("Error generated");
+		}
+	}
+
+}

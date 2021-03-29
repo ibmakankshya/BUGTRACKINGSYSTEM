@@ -1,0 +1,12 @@
+package com.ibm.repo;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+
+
+
+public interface orderRepository extends MongoRepository<Order, String>{
+
+}
+
+

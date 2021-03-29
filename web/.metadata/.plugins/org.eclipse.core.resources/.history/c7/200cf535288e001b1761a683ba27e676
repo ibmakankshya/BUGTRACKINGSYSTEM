@@ -1,0 +1,44 @@
+package com.ibm.bug.demo;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ibm.bug.Bug;
+import com.ibm.bug.demo.repo.bugRepository;
+
+
+
+
+@Service
+public class bugService {
+	@Autowired    
+	bugRepository bugrepository;
+	
+	public String createBug(Bug bug) {
+		Bug savedBug = bugrepository.save(bug) ;
+		return savedBug.getID();
+		}
+	
+	public List<Bug> getBugs(){
+		
+		return bugrepository.findAll();
+	}
+
+	public void updateBug(Bug bug) {
+		bugrepository.save(bug);
+		
+	}
+	public void deleteBug(String bugID) {
+		bugrepository.deleteById(bugID);
+		
+	}
+	public Optional<Bug> getOrder(String bugID) {
+
+		return bugrepository.findById(bugID);
+	}
+
+	
+}

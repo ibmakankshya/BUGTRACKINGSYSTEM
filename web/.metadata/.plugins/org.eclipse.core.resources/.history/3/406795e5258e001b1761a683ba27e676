@@ -1,0 +1,67 @@
+
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
+import org.springframework.http.HttpStatus;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ibm.bug.Bug;
+
+import java.util.*;
+@RestController
+public class bugController {
+	@Autowired
+	bugService bugservice; 
+
+	@PostMapping("/bug")
+	@ResponseStatus(code = HttpStatus.CREATED)
+	String createOrder(@RequestBody @Valid Bug bug, BindingResult bindingResult) {
+		validateModel(bindingResult);
+		System.out.println(bug);
+		return bugservice.createBug(bug);
+	}
+
+	@GetMapping("/bug")
+	List<Bug> getBugs(){
+		return bugservice.getBugs();
+	}
+	
+	
+/*	@GetMapping("/bug/{id}")
+	Optional<Bug> getBug(@RequestBody @PathVariable("id") String bugID) {
+
+		return bugservice.getBug(bugID);
+	}*/
+
+	@PutMapping("/bug/{id}")
+	void updateBug(@RequestBody @Valid Bug bug, BindingResult bindingResult, @PathVariable("id") String bugID) {
+		validateModel(bindingResult);
+		System.out.println(bugID);
+		bug.setID(bugID);
+		 bugservice.updateBug(bug); 
+	}
+
+	@DeleteMapping("/bug/{id}")
+	void deleteBug(@PathVariable("id") String bugID) {
+		
+		System.out.println(bugID);
+		bugservice.deleteBug(bugID);
+		
+	}
+	private void validateModel(BindingResult bindingResult){
+		if (bindingResult.hasErrors()) {
+			throw new IllegalArgumentException("Error generated");
+		}
+	}
+
+}
