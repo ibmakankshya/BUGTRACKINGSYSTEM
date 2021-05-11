@@ -1,0 +1,5 @@
+package com.ibm.workout.entity;
+
+public class Workout {
+
+}

@@ -1,2 +1,0 @@
-spring.data.mongodb.uri=mongodb://localhost/omsdb
-server.port=8082

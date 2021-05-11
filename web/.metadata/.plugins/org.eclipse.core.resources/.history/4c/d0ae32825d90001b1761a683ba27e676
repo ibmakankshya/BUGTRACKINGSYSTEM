@@ -1,5 +1,0 @@
-package com.ibm.repo;
-
-public interface orderRepository {
-
-}

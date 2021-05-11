@@ -1,0 +1,31 @@
+2021-05-05 10:17:59,669 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-05-05 10:22:42,650 [ModalContext] WARN  o.e.m.j.i.JavaProjectConversionParticipant - Workout has multiple source entries, this is not supported yet
+2021-05-05 10:22:54,964 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Workout:Workout:0.0.1-SNAPSHOT @ C:\Workout\pom.xml.
+2021-05-05 10:23:00,245 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-05 10:23:00,251 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-05 10:23:00,265 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-05 10:23:00,266 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workout\src\test\resources
+2021-05-05 10:23:00,308 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Workout/workout-backend/workout/.mvn/wrapper
+2021-05-05 10:23:00,309 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Workout/workout-backend/workout/.mvn/wrapper overlaps with sources folder /Workout/workout-backend/workout/.mvn/wrapper
+2021-05-05 10:23:00,313 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Workout/workout-backend/workout/src/test/java
+2021-05-05 10:23:00,956 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-05-05 10:23:01,669 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Workout:Workout:0.0.1-SNAPSHOT @ C:\Workout\pom.xml.
+2021-05-05 10:23:01,986 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Workout/workout-backend/workout/.mvn/wrapper
+2021-05-05 10:23:01,986 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Workout/workout-backend/workout/.mvn/wrapper overlaps with sources folder /Workout/workout-backend/workout/.mvn/wrapper
+2021-05-05 10:23:01,993 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Workout/workout-backend/workout/src/test/java
+2021-05-05 10:23:02,113 [Worker-14: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2021-05-05 10:23:02,426 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-05 10:23:02,428 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-05 10:23:02,933 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-05 10:23:02,934 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workout\src\test\resources
+2021-05-05 10:23:14,129 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-05-05 10:23:14,458 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Workout:Workout:0.0.1-SNAPSHOT @ C:\Workout\pom.xml.
+2021-05-05 10:23:14,661 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Workout/workout-backend/workout/.mvn/wrapper
+2021-05-05 10:23:14,662 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Workout/workout-backend/workout/.mvn/wrapper overlaps with sources folder /Workout/workout-backend/workout/.mvn/wrapper
+2021-05-05 10:23:14,662 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Workout/workout-backend/workout/src/test/java
+2021-05-05 10:23:14,748 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2021-05-05 10:23:15,017 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-05 10:23:15,019 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-05 10:23:15,032 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-05 10:23:15,033 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workout\src\test\resources
+2021-05-05 10:24:10,630 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

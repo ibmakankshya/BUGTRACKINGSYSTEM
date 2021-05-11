@@ -1,0 +1,26 @@
+package com.ibm.repo;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
+
+import com.ibm.Entity.Bug;
+import com.ibm.Entity.STATUS;
+
+public interface BugRepository extends MongoRepository<Bug, String> {
+
+	@Query("{'name':?0}")
+	Optional<Bug> findByName(String bugName);
+	
+	@Query("{'status':?0}")
+	List<Bug> findByStatus(STATUS status);
+	//Optional<Bug> findById(String bugId);
+	@Query("{name : {$regex : ?0,'$options':'i'}}")
+	List<Bug> findByNameIgnoreCase(String bugName);
+	@Query("{status:?0,name:{$regex:?1,'$options':'i'}}")
+	List<Bug> findByStatusAndName(STATUS status, String name);
+	@Query("{'ETA':{$regex : ?0,'$options':'i'}}")
+	List<Bug> findByDate(String bugdate);
+}
